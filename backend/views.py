@@ -25,10 +25,6 @@ def resume():
 def game():
     return render_template("game.html")
 
-@views.route('/donate', methods=['GET', 'POST'])
-def donate():
-    return render_template("donate.html")
-
 @views.route('/display', methods=['GET', 'POST'])
 def display():
    return send_from_directory("static/game", "test.html")
